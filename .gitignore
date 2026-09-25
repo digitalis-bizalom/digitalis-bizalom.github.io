@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+
+# Python, helyi privát adatok és konfiguráció
+__pycache__/
+*.pyc
+*.db
+*.db-*
+*.sqlite*
+*.env
+.env*
+private/
+backups/
