@@ -80,7 +80,7 @@
           stats.data.generation !== list.data.generation || !Array.isArray(list.data.signatories)) {
         $('public-status').textContent = 'A nyilvános aláírás-nyilvántartás jelenleg nem elérhető.';
         $('public-updated').textContent = '';
-        if (!state.signingOpen) $('signature-closed').textContent = 'Az online aláírásfogadás jelenleg nem elérhető.';
+        if (!state.signingOpen) $('signature-closed').textContent = 'Az aláírási űrlap a nyilvántartás megnyitásával válik elérhetővé.';
         return;
       }
       const count = stats.data;
