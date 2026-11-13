@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src https://digitalis-bizalom-signatures-api.mazsa-peter.workers.dev; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+  <title>Emailcím-változtatás megerősítése · Digitális Bizalom</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+  <script src="../assets/site-config.js" defer></script>
+  <script src="../assets/email-change.js" defer></script>
+</head>
+<body>
+  <header class="masthead wrap"><a class="brand" href="../">Digitális Bizalom</a></header>
+  <main class="wrap">
+    <section class="section">
+      <div class="section-label">Külön ügyintézés</div>
+      <div>
+        <h1>Emailcím-változtatás megerősítése</h1>
+        <p>Ez az oldal csak a korábban, emailben kezdeményezett és az üzemeltető által előkészített emailcímváltoztatáshoz használható. Nem hoz létre új aláírást.</p>
+        <p>Az új emailcímedre kapott, 30 percig érvényes egyszer használható kódot add meg. A kódot ne küldd el másnak, és ne illeszd be webcímbe.</p>
+        <form id="email-change-form" class="confirmation-form">
+          <div class="form-field">
+            <label for="email-change-code">Emailcím-változtatási megerősítőkód</label>
+            <input id="email-change-code" name="code" type="text" inputmode="text" autocomplete="one-time-code" maxlength="43" minlength="43" pattern="[A-Za-z0-9_-]{43}" spellcheck="false" autocapitalize="off" required>
+          </div>
+          <button class="button" id="email-change-submit" type="submit">Emailcímváltoztatás megerősítése</button>
+          <p class="feedback" id="email-change-feedback" role="status" aria-live="polite" tabindex="-1"></p>
+        </form>
+        <p class="small">Sikeres ellenőrzés után a módosítás moderációra vár. Ha nem te kérted a változtatást, ne használd a kódot; jelezd a <a href="mailto:digitalis-bizalom@alkotmany.org">digitalis-bizalom@alkotmany.org</a> címen.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap footer"><p>Digitális Bizalom</p><p><a href="../adatkezeles/">Adatkezelési tájékoztató</a> · <a href="mailto:digitalis-bizalom@alkotmany.org">Kapcsolat</a></p></footer>
+</body>
+</html>
