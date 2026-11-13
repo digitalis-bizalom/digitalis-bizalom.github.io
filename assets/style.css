@@ -4,3 +4,26 @@
 @media print{body{background:white;color:black;font-size:11pt}.wrap{width:100%}.hero{padding-block:20px}.section{padding-block:20px;break-inside:avoid}.skip,.actions,fieldset{display:none}.footer{padding-bottom:0}a{color:black}.notice{background:white}}
 
 .signup-frame{display:block;width:100%;max-width:100%;height:1000px;border:0;background:white;margin:24px auto}.legal{max-width:780px;padding:56px 0}.legal h1{font-size:clamp(2rem,5vw,3.3rem)}.legal h2{margin-top:40px}.legal p{overflow-wrap:anywhere}@media(max-width:650px){.signup-frame{height:1200px}.legal{padding:36px 0}}
+/* Manifesztó v1.0 – public registry and signature form */
+button{font:inherit;cursor:pointer}button:disabled{opacity:.55;cursor:not-allowed}
+.button{cursor:pointer;text-align:left;font-size:.96rem}.text-link{font-size:.95rem}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:22px 0 12px}
+.stat{border-top:2px solid var(--accent);background:var(--wash);padding:18px 14px;min-height:118px;display:flex;flex-direction:column;gap:7px}
+.stat-number{font-size:clamp(2rem,4vw,3.2rem);font-weight:650;letter-spacing:-.055em;line-height:1.1;font-variant-numeric:tabular-nums}
+.stat-label{font-size:.8rem;color:var(--muted);line-height:1.4}
+.public-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin:10px 0 18px}
+.public-actions .small{margin:0}.plain-button{border:1px solid var(--line);color:var(--ink);background:transparent;padding:8px 12px;border-radius:3px;font-size:.8rem}.plain-button:hover{border-color:var(--accent);background:var(--wash)}
+.name-list{list-style:decimal;margin:10px 0 20px;padding-left:28px;font-size:.96rem}.name-list li{padding:6px 8px 8px 2px;border-bottom:1px solid var(--line)}
+.signatory-name{font-weight:560}.signatory-meta,.signatory-date{display:block;font-size:.78rem;color:var(--muted)}.signatory-date{font-variant-numeric:tabular-nums}
+.signature-form{margin-top:24px;max-width:760px}.signature-form fieldset{padding:0 0 22px;margin:0 0 25px;border-bottom:1px solid var(--line)}.signature-form fieldset:last-of-type{border-bottom:0;margin-bottom:0}
+.form-legend{color:var(--ink);font-weight:650;font-size:1.05rem;margin-bottom:14px;padding:0}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.form-field{margin:0 0 20px}.form-field label{display:block;font-weight:580;padding:0 0 7px;font-size:.9rem}.form-field input{background:white;border:1px solid #a6b6ad;border-radius:3px;width:100%;padding:12px 13px;min-height:47px;color:var(--ink);font:inherit;font-size:.9rem}.form-field input:focus-visible{outline:3px solid #966325;outline-offset:2px}.optional{font-weight:400;color:var(--muted)}
+.field-hint{color:var(--muted);font-size:.8rem;line-height:1.5;margin:3px 0 14px!important}
+.signature-form .choices .choice{display:flex;align-items:flex-start;gap:10px;margin:0 0 4px;padding:7px 2px;font-size:.88rem;line-height:1.55;cursor:pointer}
+.choice input{width:18px;height:18px;accent-color:var(--accent);flex:0 0 auto;margin:4px 1px 0 0}.choice a{display:inline}
+.optional-choices{padding:12px 10px;margin-top:8px;background:var(--wash);border-left:3px solid var(--accent)}
+.turnstile-holder{margin:20px 0 20px;min-height:65px}.feedback{margin:18px 0 0;font-size:.88rem;min-height:1.5em;color:var(--muted)}.feedback-success{font-weight:550;color:var(--accent)}.feedback-error{font-weight:550;color:#8c342a}
+.confirmation-block{border-top:1px solid var(--line);padding-top:14px;margin-top:32px}.confirmation-block h3{margin-top:12px}.confirmation-form{max-width:450px}.confirmation-form input{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.04em;font-size:.9rem;}
+[hidden]{display:none!important}
+@media(max-width:650px){.stats{gap:7px}.stat{padding:14px 9px;min-height:115px}.stat-number{font-size:2.05rem}.stat-label{font-size:.72rem}.form-grid{grid-template-columns:1fr;gap:0}.signature-form{margin-top:18px}.button{gap:14px}}
+@media print{.stats{grid-template-columns:repeat(3,1fr)}.signature-form,.confirmation-block,.public-actions,.signup-frame{display:none}}
